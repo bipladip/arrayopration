@@ -1,0 +1,8 @@
+def rotate_right_by_one(arr):
+    if not arr:
+        return arr
+    return [arr[-1]] + arr[:-1]
+
+arr = [1, 2, 3, 4, 5]
+rotated = rotate_right_by_one(arr)
+print("Rotated Array:", rotated)
